@@ -34,7 +34,7 @@ duration_text2=resp2['rows'][0]['elements'][0]['duration_in_traffic']['text']
 duration_secs2=resp2['rows'][0]['elements'][0]['duration_in_traffic']['value']
 S2C=str(datetime.datetime.now())+'|'+'SCH2CHI'+'|'+str(duration_text2)+ '|' + str(duration_secs2)
 #print S2C
-f = open("traveltime", "a")
+f = open("/home/pavan01/chimove/traveltime", "a")
 f.write(C2S+'\n'+S2C +'\n')
 f.close()
 
